@@ -54,3 +54,8 @@ SELECT i.title, i.genre, i.metascore, r.ratingtomatometer
 FROM rtratings AS r
 INNER JOIN imdbmovies AS i ON
 i.title=r.title;
+
+-- Query
+SELECT title, metascore, ratingtomatometer
+FROM rtratings
+WHERE title = 'Iron Man';
