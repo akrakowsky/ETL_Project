@@ -17,8 +17,20 @@ At the end of the week, your team will submit a Final Report that describes the 
   3. Load: the final database, tables/collections, and why this was chosen.
 
 -------------------------------------------
-## Sources
+## Extract Sources:
   1. Kaggele: https://www.kaggle.com/stefanoleone992/imdb-extensive-dataset?select=IMDb+ratings.csv
      1. 1 csv: IMDB Movies.csv
   3. Data.world https://data.world/prasert/rotten-tomatoes-top-movies-by-genre
      1. 1 csv: rotten_tomatoes_top_movies_2019-01-15.csv
+
+## Transform:
+  1. IMDB Csv
+     1. removed columns
+     2. set movies country to USA
+  2. Rotten Tomatoes csv
+     1. removed columns
+     2. set columns names to lower case
+
+## Load:
+  1. Loaded files to postgres
+  2. Joined tables and created a movies view
